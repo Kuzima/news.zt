@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
 /*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
 
 /**
@@ -463,3 +465,20 @@ template {
 /*
   * CUSTOM STYLES
 */
+.wraper {
+  width: 100%;
+  height: 100vh;
+}
+.content-wraper {
+  display: flex;
+}
+.side-bar {
+  flex-basis: 20%;
+}
+.data-set {
+  flex-basis: 80%;
+}
+
+body {
+  font: 1.4em 'Open Sans Condensed', sans-serif;
+}
