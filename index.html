@@ -12,23 +12,41 @@
 <body>
 	<!-- Main wraper -->
 	<div class="wraper">
-		<button class="main-menu">menu</button>
 		<div class="content-wraper">
 			<!-- Side bar -->
 			<div class="side-bar">
-				<form action="get" name="filter-form">
-					<label for="search">Search</label>
-					<input type="text" id="search" name="search">
-					<label for="web">web</label>
-					<input type="checkbox" id="web" name="web">
-					<label for="desktop">desktop</label>
-					<input type="checkbox" id="desktop" name="desktop">
-					<label for="mobile">mobile</label>
-					<input type="checkbox" id="mobile" name="mobile">
-					<label for="support">support</label>
-					<input type="checkbox" id="support" name="support">
-					<label for="date">date</label>
-					<input type="date" id="date" name="date">
+				<button class="main-menu"></button>
+				<form action="get" name="filter-form" class="filter-form">
+					<div class="wrap-input">
+						<label for="search"></label>
+						<input type="text" id="search" name="search" placeholder="search" class="input-text">
+					</div>
+					<div class="wrap-checkbox">
+						<div class="filter-type">
+							<div class="filter">
+								<input type="checkbox" id="web" name="web" checked>
+								<label for="web">web</label>
+							</div>
+							<div class="filter">
+								<input type="checkbox" id="desktop" name="desktop" checked>
+								<label for="desktop">desktop</label>
+							</div>
+						</div>
+						<div class="filter-type">
+							<div class="filter">
+								<input type="checkbox" id="mobile" name="mobile" checked>
+								<label for="mobile">mobile</label>
+							</div>
+							<div class="filter">
+								<input type="checkbox" id="support" name="support" checked>
+								<label for="support">support</label>
+							</div>
+						</div>
+					</div>
+					<div class="wrap-input">
+						<label for="date"></label>
+						<input type="text" id="date" name="date" class="input-text date-picker" placeholder="12-04-1986">
+					</div>
 				</form>
 			</div>
 			<!-- Data sets -->
@@ -43,7 +61,7 @@
 							<th>type</th>
 							<th>status</th>
 							<th>customer</th>
-							<th>buttons</th>
+							<th></th>
 						</tr>
 						<tr>
 							<td>project name</td>
@@ -53,7 +71,7 @@
 							<td>type</td>
 							<td>status</td>
 							<td>customer</td>
-							<td>buttons</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>project name</td>
@@ -63,7 +81,7 @@
 							<td>type</td>
 							<td>status</td>
 							<td>customer</td>
-							<td>buttons</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>project name</td>
@@ -73,7 +91,17 @@
 							<td>type</td>
 							<td>status</td>
 							<td>customer</td>
-							<td>buttons</td>
+							<td></td>
+						</tr>
+						<tr class="tr-gray">
+							<td>project name</td>
+							<td>due date</td>
+							<td>created</td>
+							<td>members</td>
+							<td>type</td>
+							<td>status</td>
+							<td>customer</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>project name</td>
@@ -83,7 +111,17 @@
 							<td>type</td>
 							<td>status</td>
 							<td>customer</td>
-							<td>buttons</td>
+							<td></td>
+						</tr>
+						<tr class="tr-red">
+							<td>project name</td>
+							<td>due date</td>
+							<td>created</td>
+							<td>members</td>
+							<td>type</td>
+							<td>status</td>
+							<td>customer</td>
+							<td></td>
 						</tr>
 						<tr>
 							<td>project name</td>
@@ -93,27 +131,7 @@
 							<td>type</td>
 							<td>status</td>
 							<td>customer</td>
-							<td>buttons</td>
-						</tr>
-						<tr>
-							<td>project name</td>
-							<td>due date</td>
-							<td>created</td>
-							<td>members</td>
-							<td>type</td>
-							<td>status</td>
-							<td>customer</td>
-							<td>buttons</td>
-						</tr>
-						<tr>
-							<td>project name</td>
-							<td>due date</td>
-							<td>created</td>
-							<td>members</td>
-							<td>type</td>
-							<td>status</td>
-							<td>customer</td>
-							<td>buttons</td>
+							<td></td>
 						</tr>
 					</thead>
 				</table>
