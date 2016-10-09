@@ -644,14 +644,14 @@ table {
 }
 th{
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 10px;
   font-weight: 900;
   color: #8e4a12;
   border-bottom: 1px solid #737374;
   padding: 0.5em;
 }
 td{
-  font-size: 14px;
+  font-size: 9px;
   font-weight: 500;
   padding: 1em;
   text-transform: uppercase;
@@ -682,8 +682,24 @@ td:first-of-type {
 }
 td:nth-of-type(8) {
   display: block;
+  height: 8px;
+  width: 8px;
   background: url("../images/recycle.png") 0 0 no-repeat/24px 28px;
 }
+.tr-red td:nth-of-type(8) {
+  display: block;
+  height: 8px;
+  width: 8px;
+  background: url("../images/recycle-red.png") 0 0 no-repeat/24px 28px;
+}
+.tr-gray td:nth-of-type(8) {
+  display: block;
+  height: 8px;
+  width: 8px;
+  background: url("../images/recycle-gray.png") 0 0 no-repeat/24px 28px;
+}
+
+
 /*--Footer--*/
 
 footer {
